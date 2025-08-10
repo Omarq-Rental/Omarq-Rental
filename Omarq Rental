@@ -1,0 +1,126 @@
+index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMARQ Rental</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #1f1f1f;
+            color: #d4af37;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #1f1f1f;
+            border-bottom: 3px solid #d4af37;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        input[type="submit"] {
+            background-color: #d4af37;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #b8902d;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+        }
+        .services {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🏛️ OMARQ Rental</h1>
+        <p>Soluciones inmobiliarias modernas</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Servicios</h2>
+            <div class="services">
+                <ul>
+                    <li>Alquiler de propiedades</li>
+                    <li>Asesoría inmobiliaria</li>
+                    <li>Gestión de contratos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Formulario de contacto</h2>
+            <form>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+                <label for="identificacion">Identificación:</label>
+                <input type="text" id="identificacion" name="identificacion" placeholder="DNI / Pasaporte">
+
+                <label for="telefono">Número de contacto:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta"></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section>
+            <h2>Ubicación</h2>
+            <iframe src="https://www.google.com/maps?q=Pedro%20Cueva%20Calle%207%20Mz%20H%20Lte%2019%20Ventanilla&output=embed"></iframe>
+        </section>
+    </div>
+</body>
+</html>
